@@ -2,6 +2,8 @@
 
 O Objetivo da atividade era recriar a tela de logon (continuar como) do Instagram. Tive a ideia de adicionar uma versão Dark Mode utilizando "prefers-color-scheme: dark" que muda o comportamento da página através das configurações pré definidas do browser/SO utilizado.
 
+##Update! fiz o curso de javascript e voltei para adicionar um botão nesse projeto aqui.
+
 ## Para testar é possível utilizar as devtools do chrome seguindo os passos abaixo:
 ###   f12
 ### Nos 3 pontinhos no canto inferior esquerdo, selecionar Rendering
