@@ -1,12 +1,9 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
-
-    /*colors*/
+:root {
+    /*cores e imgs*/
+    --theme-button:url("./img/lua.png");
+    --insta-logo: url('./img/instagram-logo.png');  
+    --img-google: url('./img/googleplay-button.png');  
+    --img-apple: url('./img/apple-button.png');  
     --body-bg-color: rgb(243, 243, 243);
     --group-border-color:lightgray;
     --group-bg-color:#ffffff;
@@ -16,6 +13,15 @@
     --not-account-color:rgb(160, 160, 160);
     --link-blue-color:#0095f6;
     --get-the-app-color:none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
 }
 
 body {
@@ -56,6 +62,18 @@ body {
     min-height: 34rem;
 }
 
+#theme-selector{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color:var(--get-the-app-color);
+    background: none;
+}
+
 .group {
     display: flex;
     justify-content: space-between;
@@ -65,11 +83,11 @@ body {
     width: 100%;
     padding: 1.3rem 0;
     border: 1px solid var(--group-border-color);
+    margin-block-end: 3px;
 }
 
 .group:nth-child(1) {
     min-height: 19rem;
-    background-image: url('./img/instagram-logo.png');
     background-repeat: no-repeat;
     background-position:top, center;
     background-position-y: 6%;
@@ -78,8 +96,14 @@ body {
 
 .instagram-logo {
     display: flex;
-    height: 3rem;
-    background: url('./img/instagram-logo.png');
+    justify-content: center;
+    align-items: center;
+    min-height: 4.5rem;
+    width: 70%;
+    background-image: var(--insta-logo);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
 }
 
 .profile-photo {
@@ -88,6 +112,7 @@ body {
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 5px;
 }
 
 .profile-photo img {
@@ -139,11 +164,11 @@ body {
 }
 
 .app-download:nth-child(1) {
-    background-image: url('./img/apple-button.png');
+    background-image: var(--img-apple);
 }
 
 .app-download:nth-child(2) {
-    background-image: url('./img/googleplay-button.png');
+    background-image: var(--img-google);
 }
 
 /* media queries */
@@ -187,18 +212,22 @@ body {
         display: none;
       }
       .app-download:nth-child(2) {
-        background-image: url('./img/googleplay-button3.png');
+        background-image: var(--img-google);
 
     }
     .app-download:nth-child(1) {
-        background-image: url('./img/apple-button2.png');
+        background-image: var(--img-apple);
     }
 
     .group:nth-child(1) {
-    background-image: url('./img/instagram-logo2.png');
+    background-image: var(--insta-logo);
     }
     
-    *{
+    :root{
+      --theme-button:url('./img/Sol.png');  
+      --insta-logo: url('./img/instagram-logo2.png');  
+      --img-google: url('./img/googleplay-button3.png');  
+      --img-apple: url('./img/apple-button2.png');  
       --body-bg-color: #242424;
       --group-border-color:#696767;
       --group-bg-color:#121212;
